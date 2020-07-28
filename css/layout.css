@@ -1,0 +1,213 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+
+/*==========Main================*/
+
+main {
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+}
+
+/*==========header===============*/
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    background-image: linear-gradient(rgba(51, 29, 4, 0.5), rgba(54, 54, 54, 0.5)),url(../images/headerImage.jpg);
+    background-size: cover;
+    background-position: center top;
+    padding: 40px;
+    position: relative;
+}
+
+header #btn {
+    display: none;
+}
+
+header img.logo {
+    float: left;
+    width: 170px;
+    height: auto;
+}
+
+header #nav{
+    width: 600px;
+    height: 60px;
+    float: right; 
+    margin-top: 30px;
+}
+
+header #nav ul {
+    float: right;
+   
+}
+
+header #nav ul #xx{
+    display: none;
+}
+
+header #nav li {
+    float: left;
+    margin-left: 20px;
+}
+
+header #nav li a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #000;
+    line-height: 2;
+}
+
+header #nav li a:hover {
+    color: #fdc770;
+    border-bottom: 1px solid #C0A38C;
+}
+
+header h2 {
+    position: absolute;
+    left: 2%;
+    bottom: 15%;
+    clear: both;
+    color: #FFF;
+    font-size: 6.4vw;
+    font-family: 'Playfair Display', serif;
+}
+
+header h3 {
+    position: absolute;
+    left: 2%;
+    bottom: 7.5%;
+    color: #FFF;
+    font-size: 4.2vw;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* ==========Image section========== */
+article {
+    width:1400px;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+}
+
+/* article p {
+    font-size: 18px;
+    line-height: 2;
+    padding-bottom: 20px;
+    text-align: justify;
+} */
+
+article ul{
+    width: 1360px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+article li{
+    width: 428px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+article li:nth-child(1n+1){
+    margin-left: 20px;
+}
+
+article li img{
+    width: 100%;
+    height: auto;
+}
+
+/* ==========content section========== */
+#content{
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+    background-color:rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+}
+
+#content .box{
+	width:400px;
+    margin:50px 10px 30px 10px;
+	
+}
+
+#content .box h3{
+	font-size:1.5em;
+	line-height:2;
+	border-bottom: 1px solid #C1BDB3;
+	color:#323031;
+	text-align:center;
+}
+
+#content .box p{
+	font-size:15px;
+	line-height:1.8;
+	padding:20px;
+	color:#323031;
+}
+
+/* ==========footer============ */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+}
+
+footer h4 {
+    font-size: 12px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFF;
+    font-weight: normal;
+}
+
+/*== 1440 版型  ( 小筆電 ) =========================*/
+
+@media (min-width:1025px) and (max-width:1440px) {
+
+    
+}
+
+
+/*== 1024 版型 ( iPad 橫 ) =========================*/
+
+@media (min-width:769px) and (max-width:1024px){
+
+    
+}
+
+
+/*== 768 版型 （ 手機版+iPAD直 ）=========================*/
+
+@media (min-width:320px) and (max-width:768px){
+    
+    
+}
+
+
