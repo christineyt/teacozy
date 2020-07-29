@@ -1,3 +1,4 @@
+
 function changePhoto1(){
     document.querySelector("#img001").src="./images/change1.jpg";
 }
