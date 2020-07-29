@@ -7,4 +7,4 @@ function hideNav(){
 }
 
 $("#btn").on("click",showNav);
-$("#xx").on("click", hideNav);
+$("#nav").on("click", hideNav);
