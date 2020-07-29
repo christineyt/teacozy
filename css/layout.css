@@ -187,27 +187,256 @@ footer h4 {
     font-weight: normal;
 }
 
-/*== 1440 版型  ( 小筆電 ) =========================*/
+/*== 1440 px ( small Tablet) =========================*/
 
 @media (min-width:1025px) and (max-width:1440px) {
-
-    
+main{
+    min-height: 700px;
+}
+header #nav{
+    margin-top: 20px;
+}    
 }
 
+article{
+    width:96%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
 
-/*== 1024 版型 ( iPad 橫 ) =========================*/
+article ul{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+article li{
+    width: 31%;
+    float: left;
+    margin-left: 1.5%;
+    margin-bottom: 1.4%;
+}
+/*== 1024 px ( iPad Hor) =========================*/
 
 @media (min-width:769px) and (max-width:1024px){
+main{
+    min-height: 700px;
+}
 
-    
+header{
+    padding:30px;
+}
+
+header img.logo{
+    width: 150px;
+}
+
+header #nav{
+    width: 540px;
+    margin-top: 15px;
+}
+
+header #nav ul{
+    margin-left: 12px;
+}
+
+article{
+    width: 96%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+article ul{
+    width: 100%;
+    overflow: hidden;
+}
+
+article li{
+    width: 32%;
+    float: left;
+    margin-left:1.3%;
+    margin-bottom: 1.3%;
+}
+
+article li:nth-child(1n+1){
+    margin-left: 1.3%;
+}
+
+article li:nth-child(3n+1){
+    margin-left: 0.5%;
+}
+
 }
 
 
-/*== 768 版型 （ 手機版+iPAD直 ）=========================*/
+/*== 768 px（ Mobile+iPAD ver）=========================*/
 
 @media (min-width:320px) and (max-width:768px){
+main{
+    min-height: 500px;
+}    
+
+header{
+    padding: 20px;
+}
+
+header #btn{
+    display: block;
+    width: 48px;
+    height:36px;
+    background-image: url(../images/btn.png);
+    background-size: 48px auto;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+header img.logo{
+    width: 140px;
+}
+
+header #nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 9999;
+    margin: 0 auto;
+    float: none;
+    /* transform: perspective(400px) scale(0) rotate(0deg);  */
+    /* display: none; */
+}
+
+#nav.show{
+    /* transition: 1s;
+    transform: perspective(400px) scale(1) rotateX(360deg); */
+}
+
+#nav .hide{
+    /* transition: 1s;
+    transform: perspective(400px) scale(0) rotateX(0deg); */
+} 
+
+header #nav ul{
+    width:70%;
+    height: 70%;
+    float: none;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+header #nav ul #xx{
+    display: block;
+    position: absolute;
+    right:-12px;
+    top: -12px;
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+header #nav li{
+    width:100%;
+    float: none;
+    margin-left: 0px;
+}
+
+header #nav li a{
+    display: block;
+    width: 100%;
+    height: 70px;
     
-    
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: none;
+    background-color: #fff;
+    margin-bottom: -1px;
+    text-align: center;
+    line-height: 70px;
+    color: black;
+}
+
+header #nav li a:hover{
+    border-bottom: none;
+}
+
+header h2{
+    left: 2%;
+    bottom: 1%;
+    font-size: 8.2vw;
+}
+header h3{
+    left: 2%;
+    bottom: 6%;
+    font-size:  7vw;
+}
+
+article ul{
+    width:100%;
+    overflow: hidden;
+}
+
+article li{
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1.4%;
+}
+
+article img{
+    width: 100%;
+}
+
+article li:nth-child(1n+1){
+    margin-left: 1%;
+}
+
+article li:nth-child(3n+1){
+    margin-left: 1%;
+}
+
+article li:nth-child(5n+1){
+    margin-left: 1%;
+} 
+
+#content{
+	width:100%;
+	overflow:hidden;
+    display: block;
+    justify-content: center;
+}
+
+#content .box{
+    width:100%;
+    margin:10px 0px 20px 0px;
+	padding:10px;
+}
+
+#content .box h3{
+	font-size:1.5em;
+	line-height:1.5;
+}
+
+#content .box p{
+	font-size:1rem;
+	line-height:1.5;
+	padding:10px;
 }
 
 
+
+}
